@@ -1,0 +1,227 @@
+
+h1{
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.content {
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f443;
+  background-image: url("background1.png");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}
+
+.countdown {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.red-time {
+  color: red;
+}
+.frame-container {
+  border: 3px solid #01020a; /* Border around the frame */
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 320px;
+  margin: 20px auto;
+}
+
+/* Button and general styles */
+#analyze {
+  font-size: 22px;
+  padding: 18px 35px;
+  background: linear-gradient(145deg, #3b82f6, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), -2px -2px 6px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+#analyze:hover {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  transform: translateY(-2px);
+}
+#analyze:active {
+  transform: translateY(2px);
+}
+
+/* Progress bar styles */
+.progress-bar {
+  width: 250px; /* Adjusted to fit the button width */
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+.progress {
+  width: 0;
+  height: 8px;
+  background-color: #3b82f6;
+  transition: width 1s ease;
+}
+
+/* Status bar styles */
+.status-bar {
+  width: 250px; /* Same length as progress bar */
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+}
+
+.status-message {
+  font-size: 16px;
+  font-weight: bold; /* Bold the text */
+  color: #1e40af;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #e0f2fe;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  font-size: 2rem;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border-color: rgb(2, 0, 12);
+  border-radius: 10px;
+  text-shadow: 7px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.controls button:hover {
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+.time-input {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.time-input input {
+  font-size: 1.5rem;
+  padding: 5px;
+  width: 80px;
+  margin-right: 5px;
+  text-align: center;
+}
+.time-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.records {
+  margin-top: 30px;
+  text-align: left;
+  display: inline-block;
+}
+
+.records h3 {
+  margin-bottom: 10px;
+}
+
+.records ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.records li {
+  background-color: #ddd;
+  margin: 5px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* Styling for Input Fields */
+.time-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.time-input label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.time-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.time-input input {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 100px;
+  margin-right: 5px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.time-input input:focus {
+  border-color: rgb(123, 43, 160);
+  outline: none;
+}
+
+/* Countdown Timer */
+.countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  width: 150px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Highlighting Countdown Time in Red */
+.countdown.red-time {
+  color: red;
+  border-color: red;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

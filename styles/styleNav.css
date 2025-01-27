@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: #fdfdfdd8; /* Example solid background color */
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  
+  
+}
+
+
+header img {
+  margin-bottom: 5px;
+  height: 70px;
+  width: auto;
+  border-radius: 0%;
+  box-shadow: rgba(255, 240, 240, 0.2);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: rgb(18, 22, 231);
+  background-color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 2px;
+  border-color: #be18d1;
+  border-width: 2px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: -webkit-linear-gradient;
+  color: rgb(0, 0, 0);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav a.active {
+  background-color: -webkit-linear-gradient;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu-toggle {
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Hidden by default for larger screens */
+  color: #333;
+}
+@media (max-width: 768px) {
+  header {
+    background-color: #fdfdfd; /* Example solid background color */
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    
+  }
+  .menu-toggle {
+    display: block; /* Show the hamburger menu on smaller screens */
+    
+  }
+  header img {
+    height: 60px;
+    width: auto;
+    border-radius: 0%;
+    box-shadow: rgba(255, 240, 240, 0.2);
+  }
+
+  nav {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    position: absolute;
+    top:50px;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  nav.show {
+    display: flex; /* Show navigation when menu is toggled */
+  }
+
+  nav a {
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+}

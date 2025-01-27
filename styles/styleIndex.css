@@ -1,0 +1,48 @@
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f443;
+  background-image: url("background1.png");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}
+
+.content {
+  text-align: center;
+  padding: 40px 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.information p {
+  font-size: 1.2rem;
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
